@@ -1,6 +1,6 @@
 # Design Recipe for an AMD64 ASM Program
 
-### A Program is a Bunch of Functions#
+### A Program is a Bunch of Functions
  * Execution starts at “main”.
  * We build functions to be independent.
  * To design a program, design its functions.
