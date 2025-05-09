@@ -81,22 +81,74 @@ There are a couple of other registers worth remembering:
 #### Arithmetic Instructions
 {% striped() %}
 
-Instruction	Description
-mov %rxx, %ryy	Copy data from register %rxx to %ryy
-—————–	——————————————-
-inc %rxx	Add one to %rxx
-dec %rxx	Subtract one from rxx
-neg %rxx	Negate %rxx
-not %rxx	Bitwise NOT %rxx
-—————–	——————————————-
-add %rxx, %ryy	%ryy += %rxx
-sub %rxx, %ryy	%ryy -= %rxx
-or %rxx, %ryy	%ryy = %rxx OR %ryy (bitwise)
-and %rxx, %ryy	%ryy = %rxx AND %ryy (bitwise)
-—————–	——————————————-
-imul %rxx	%rdx:%rax = %rax * %rxx
-imul %rxx, %ryy	%ryy = %ryy * %rxx (truncated to 64-bits)
-idiv %rxx	%rax = %rdx:%rax / %rxx; %rdx = remainder
+<table><thead>
+  <tr>
+    <th>Instruction</th>
+    <th>Description</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>mov %rxx, %ryy</td>
+    <td>Copy data from register %rxx to %ryy</td>
+  </tr>
+  <tr>
+    <td>—————–</td>
+    <td>——————————————-</td>
+  </tr>
+  <tr>
+    <td>inc %rxx</td>
+    <td>Add one to %rxx</td>
+  </tr>
+  <tr>
+    <td>dec %rxx</td>
+    <td>Subtract one from rxx</td>
+  </tr>
+  <tr>
+    <td>neg %rxx</td>
+    <td>Negate %rxx</td>
+  </tr>
+  <tr>
+    <td>not %rxx</td>
+    <td>Bitwise NOT %rxx</td>
+  </tr>
+  <tr>
+    <td>—————–</td>
+    <td>——————————————-</td>
+  </tr>
+  <tr>
+    <td>add %rxx, %ryy</td>
+    <td>%ryy += %rxx</td>
+  </tr>
+  <tr>
+    <td>sub %rxx, %ryy</td>
+    <td>%ryy -= %rxx</td>
+  </tr>
+  <tr>
+    <td>or %rxx, %ryy</td>
+    <td>%ryy = %rxx OR %ryy (bitwise)</td>
+  </tr>
+  <tr>
+    <td>and %rxx, %ryy</td>
+    <td>%ryy = %rxx AND %ryy (bitwise)</td>
+  </tr>
+  <tr>
+    <td>—————–</td>
+    <td>——————————————-</td>
+  </tr>
+  <tr>
+    <td>imul %rxx</td>
+    <td>%rdx:%rax = %rax * %rxx</td>
+  </tr>
+  <tr>
+    <td>imul %rxx, %ryy</td>
+    <td>%ryy = %ryy * %rxx (truncated to 64-bits)</td>
+  </tr>
+  <tr>
+    <td>idiv %rxx</td>
+    <td>%rax = %rdx:%rax / %rxx; %rdx = remainder</td>
+  </tr>
+</tbody></table>
+
 {% end %}
 
 ### Flow Control and Logic
@@ -224,7 +276,7 @@ $ as -o foo.o foo.s
 $ ld -o foo foo.o
 ```
 
-### Using GDB with ASM#
+### Using GDB with ASM
 Compile with -g
 Use break to set breakpoints on labels or line numbers.
 Print registers with p $rax or p/x $rax.
