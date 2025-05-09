@@ -80,7 +80,7 @@ label:
  * Translate the pseudocode to assembly, line by line.
  * Use the variable mapping you already figured out.
 
-# Translating Pseudocode to ASM#
+# Translating Pseudocode to ASM
 
  * C can translate to ASM nearly 1:1.
  * Every C statement can be used to fill in a corresponding ASM “template”.
