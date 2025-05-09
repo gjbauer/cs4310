@@ -163,19 +163,62 @@ Note: The argument order for “cmp” is backwards here.
 
 {% striped() %}
 
-Instruction	Description
-cmp %ryy, %rxx	Compares the two registers, updating the flags register (note: order seems backwards)
-—————-	————————————————————–
-je label	Jump if equal (if previous cmp set equal flag; %rxx == %ryy)
-jne label	Jump if not equal (%rxx != %ryy)
-jl label	Jump if less than (%rxx < %ryy)
-jle label	<=
-jg label	>
-jge label	>=
-—————-	————————————————————–
-sete %rzz	Set %rzz if %rxx == %ryy in the previous cmp, else clear it.
-setg %rzz	Set %rzz if %rxx > %ryy
-setl %rzz	Set %rzz if %rxx < %ryy
+<table><thead>
+  <tr>
+    <th>Instruction</th>
+    <th>Description</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>cmp %ryy, %rxx</td>
+    <td>Compares the two registers, updating the flags register (note: order seems backwards)</td>
+  </tr>
+  <tr>
+    <td>—————-</td>
+    <td>————————————————————–</td>
+  </tr>
+  <tr>
+    <td>je label</td>
+    <td>Jump if equal (if previous cmp set equal flag; %rxx == %ryy)</td>
+  </tr>
+  <tr>
+    <td>jne label</td>
+    <td>Jump if not equal (%rxx != %ryy)</td>
+  </tr>
+  <tr>
+    <td>jl label</td>
+    <td>Jump if less than (%rxx &lt; %ryy)</td>
+  </tr>
+  <tr>
+    <td>jle label</td>
+    <td>&lt;=</td>
+  </tr>
+  <tr>
+    <td>jg label</td>
+    <td>&gt;</td>
+  </tr>
+  <tr>
+    <td>jge label</td>
+    <td>&gt;=</td>
+  </tr>
+  <tr>
+    <td>—————-</td>
+    <td>————————————————————–</td>
+  </tr>
+  <tr>
+    <td>sete %rzz</td>
+    <td>Set %rzz if %rxx == %ryy in the previous cmp, else clear it.</td>
+  </tr>
+  <tr>
+    <td>setg %rzz</td>
+    <td>Set %rzz if %rxx &gt; %ryy</td>
+  </tr>
+  <tr>
+    <td>setl %rzz</td>
+    <td>Set %rzz if %rxx &lt; %ryy</td>
+  </tr>
+</tbody></table>
+
 {% end %}	
 
 ### Function Call and Stack
