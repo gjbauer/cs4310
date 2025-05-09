@@ -32,10 +32,48 @@ Shorter parts of these registers are also accessible by the hisorical names:
 
 {% striped() %}
 
-64-bit register	Low 32-bits	Low 16 bits	Low 8 bits	Byte 7*
-%rax	%eax	%ax	%al	%ah
-%rsi	%esi	%si	%sil	n/a
-%r8	%r8d	%r8w	%r8b	n/a
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-1wig">64-bit register</th>
+    <th class="tg-1wig">Low 32-bits</th>
+    <th class="tg-1wig">Low 16 bits</th>
+    <th class="tg-1wig">Low 8 bits</th>
+    <th class="tg-1wig">Byte 7*</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">%rax</td>
+    <td class="tg-0lax">%eax</td>
+    <td class="tg-0lax">%ax</td>
+    <td class="tg-0lax">%al</td>
+    <td class="tg-0lax">%ah</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">%rsi</td>
+    <td class="tg-0lax">%esi</td>
+    <td class="tg-0lax">%si</td>
+    <td class="tg-0lax">%sil</td>
+    <td class="tg-0lax">n/a</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">%r8</td>
+    <td class="tg-0lax">%r8d</td>
+    <td class="tg-0lax">%r8w</td>
+    <td class="tg-0lax">%r8b</td>
+    <td class="tg-0lax">n/a</td>
+  </tr>
+</tbody>
+</table>
+
 {% end %}				
 The names for the other registers follow the pattern within the same group.
 
