@@ -12,3 +12,5 @@ for file in files:
 	text = md(f0.read())
 	f1.write(text)
 	print(text)
+	f0.close()
+	f1.close() # <-
