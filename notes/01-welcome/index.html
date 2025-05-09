@@ -1,0 +1,969 @@
+
+
+
+
+
+
+
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
+><head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  
+  <title>Lecture Notes: 01 Intro &middot; Classes w/ Prof. Nat Tuck</title>
+    <meta name="title" content="Lecture Notes: 01 Intro &middot; Classes w/ Prof. Nat Tuck" />
+  
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/appearance.min.8a082f81b27f3cb2ee528df0b0bdc39787034cf2cc34d4669fbc9977c929023c.js"
+    integrity="sha256-iggvgbJ/PLLuUo3wsL3Dl4cDTPLMNNRmn7yZd8kpAjw="
+  ></script>
+  
+  
+  
+  
+  
+  
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.fe4e73c91348ad731c58996be6b53448d3ef2d382f94eca3545a6dd8457f5c89.css"
+    integrity="sha256-/k5zyRNIrXMcWJlr5rU0SNPvLTgvlOyjVFpt2EV/XIk="
+  />
+  
+  
+  
+  
+  
+  
+  
+  <meta
+    name="description"
+    content="
+      
+        Welcome to 4310 # Instructor: Nat Tuck Course: CS4310 Operating Systems Where does this course fit in?
+      
+    "
+  />
+  
+  
+  
+  <link rel="canonical" href="https://homework.quest/classes/2025-01/cs4310/notes/01-welcome/" />
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  
+  
+  
+  
+  
+  
+  
+  
+  <meta property="og:url" content="https://homework.quest/classes/2025-01/cs4310/notes/01-welcome/">
+  <meta property="og:site_name" content="Classes w/ Prof. Nat Tuck">
+  <meta property="og:title" content="Lecture Notes: 01 Intro">
+  <meta property="og:description" content="Welcome to 4310 # Instructor: Nat Tuck Course: CS4310 Operating Systems Where does this course fit in?">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="classes">
+    <meta property="article:published_time" content="2025-01-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-01-21T22:16:08-05:00">
+
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Lecture Notes: 01 Intro">
+  <meta name="twitter:description" content="Welcome to 4310 # Instructor: Nat Tuck Course: CS4310 Operating Systems Where does this course fit in?">
+
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "\/classes",
+    "name": "Lecture Notes: 01 Intro",
+    "headline": "Lecture Notes: 01 Intro",
+    
+    "abstract": "Welcome to 4310 # Instructor: Nat Tuck Course: CS4310 Operating Systems Where does this course fit in?",
+    "inLanguage": "en",
+    "url" : "https:\/\/homework.quest\/classes\/2025-01\/cs4310\/notes\/01-welcome\/",
+    "author" : {
+      "@type": "Person",
+      "name": "Nat Tuck"
+    },
+    "copyrightYear": "2025",
+    "dateCreated": "2025-01-20T00:00:00\u002b00:00",
+    "datePublished": "2025-01-20T00:00:00\u002b00:00",
+    
+    "dateModified": "2025-01-21T22:16:08-05:00",
+    
+    
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "1718"
+  }
+  </script>
+    
+    
+    
+    <script type="application/ld+json">
+    {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "https://homework.quest/",
+       "name": "/",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://homework.quest/classes/",
+       "name": "/Classes",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://homework.quest/classes/2025-01/",
+       "name": "Classes, Spring 2025",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "item": "https://homework.quest/classes/2025-01/cs4310/",
+       "name": "CS 4310 Spring 2025: Course Site",
+       "position": 4
+     },
+     {
+       "@type": "ListItem",
+       "name": "Lecture Notes 01 Intro",
+       "position": 5
+     }
+   ]
+ }
+  </script>
+
+  
+  <meta name="author" content="Nat Tuck" />
+  
+    
+      <link href="https://github.com/NatTuck" rel="me" />
+    
+      <link href="https://youtube.com/NatTuck" rel="me" />
+    
+  
+  
+  
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+  
+  
+</head>
+<body
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content"
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
+        >Skip to main content</a
+      >
+    </div>
+    
+    
+      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral sm:py-10 print:hidden">
+  <nav class="flex items-start justify-between sm:items-center">
+    
+    <div class="flex flex-row items-center">
+      
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="/"
+    >Classes w/ Prof. Nat Tuck</a
+  >
+
+    </div>
+    
+    
+      <ul class="flex list-none flex-col text-end sm:flex-row">
+        
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Home</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/classes/2025-01/cs2370/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >cs2370</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/classes/2025-01/cs2470/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >cs2470</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="/classes/2025-01/cs4310/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >cs4310</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+            
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0.5">
+              
+                <a
+                  href="https://inkfish.homework.quest/"
+                  title=""
+                  
+                  ><span
+                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      >Inkfish</span
+                    >
+                  </a
+                >
+              
+            </li>
+          
+          
+        
+      </ul>
+    
+  </nav>
+</header>
+
+    
+    <div class="relative flex grow flex-col">
+      <main id="main-content" class="grow">
+        
+  <article>
+    <header class="max-w-prose">
+      
+      <h1 class="mb-8 mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        Lecture Notes: 01 Intro
+      </h1>
+      
+        <div class="mb-10 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+          
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+    
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+      <time datetime="2025-01-20 00:00:00 &#43;0000 UTC">2025 Jan 20</time><span class="px-2 text-primary-500">&middot;</span><time datetime="2025-01-21 22:16:08 -0500 EST">Updated: 2025 Jan 21</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">9 mins</span>
+    
+
+    
+    
+  </div>
+
+  
+  
+
+
+        </div>
+      
+      
+    </header>
+    <section class="prose mt-0 flex max-w-full flex-col dark:prose-invert lg:flex-row">
+      
+      <div class="min-h-0 min-w-0 max-w-prose grow">
+        <h2 id="welcome-to-4310" class="relative group">Welcome to 4310 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#welcome-to-4310" aria-label="Anchor">#</a></span></h2><ul>
+<li>Instructor: Nat Tuck</li>
+<li>Course: CS4310 Operating Systems</li>
+</ul>
+<p>Where does this course fit in?</p>
+<ul>
+<li>You&rsquo;re a CS major</li>
+<li>You can write computer programs.</li>
+<li>In this course, we explore some of the details of how
+actual programs run on concrete computers.</li>
+</ul>
+<p>The plot:</p>
+<ul>
+<li>To do things, programs need to use hardware resources.</li>
+<li>1980 personal computer: one program at a time.</li>
+<li>Two programs at a time means conflicts (who gets input from
+keyboard? don&rsquo;t want to mix output to line printer!)</li>
+<li>Add a dedicated program to talk the the hardware: the OS. Other
+programs ask the OS to access shared resources for them.</li>
+<li>To ask the OS to do stuff for you, you make a system call.</li>
+<li>This class is about writing programs that use system calls.</li>
+<li>System calls are different on different operating systems,
+so we need to pick a specific one to use.</li>
+<li>We&rsquo;re using Linux. More specifically, a modern Debian-family Linux.</li>
+<li>Even with an OS, programs are still written to target a specific
+hardware archetecture.</li>
+<li>Compiled programs are binary data - machine code - and different
+kinds of processors have different machine codes.</li>
+<li>We&rsquo;ll be using a common archetecture for desktop / laptop
+computers, the AMD64 archetecture.</li>
+<li>A platform is the combination of processor archetecture and OS,
+for us that&rsquo;s AMD64 Linux.</li>
+</ul>
+<h2 id="course-resources" class="relative group">Course Resources <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#course-resources" aria-label="Anchor">#</a></span></h2><ul>
+<li>My site: <a href="http://homework.quest/" target="_blank" rel="noreferrer">http://homework.quest/</a></li>
+<li>Course Site / Syllabus</li>
+<li>Inkfish</li>
+<li>Office Hours start Monday.</li>
+</ul>
+<h2 id="inkfish" class="relative group">Inkfish <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#inkfish" aria-label="Anchor">#</a></span></h2><ul>
+<li>Show Inkfish</li>
+<li>Show hw01</li>
+</ul>
+<h2 id="syllabus" class="relative group">Syllabus <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#syllabus" aria-label="Anchor">#</a></span></h2><ul>
+<li>There&rsquo;s a schedule. It may resemble what happens.</li>
+<li>Grades: Homeworks, Projects</li>
+<li>Homework: These are difficult programming assignments.</li>
+<li>Projects: These are very difficult programming assignments that
+you are not expected to get 100% on.</li>
+</ul>
+<p>Cheating</p>
+<ul>
+<li>
+<p>Copying code without clear, written attribution is plagarism.</p>
+</li>
+<li>
+<p>If you submit plagarized work, you fail the course.</p>
+</li>
+<li>
+<p>You&rsquo;re not allowed to share solution code with other students either.</p>
+</li>
+<li>
+<p>If you cheat, you get reported to the college, which is bad.</p>
+</li>
+<li>
+<p>You are given starter code for assignments, you can use that.</p>
+</li>
+<li>
+<p>There is code shown in lecture. It&rsquo;s not starter code, so using
+it without attribution is plagarism. This is the one case where I
+might be lenient on the policy, but I also may just give you an
+F for the semester on the first offense.</p>
+</li>
+</ul>
+<p>The best way to avoid cheating (and the best way to learn the content
+in this course), is to personally type your own code. Don&rsquo;t download
+other people&rsquo;s solutions, don&rsquo;t copy and paste other people&rsquo;s code,
+don&rsquo;t ask some AI tool to generate code, etc.</p>
+<h2 id="c---asm" class="relative group">C -&gt; ASM <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#c---asm" aria-label="Anchor">#</a></span></h2><ul>
+<li>&ldquo;Programming&rdquo; means &ldquo;writing C code&rdquo;.</li>
+<li>On Linux-like (UNIX, *nix, POSIX) systems, the operating system
+API is primarily exposed to C programs through the system C library.</li>
+<li>The hardware doesn&rsquo;t run C though - it runs amd64 machine code (on your
+laptop) or ARM machine code (on your phone) or maybe some other machine
+code.</li>
+<li>Machine code is for machines, not humans, so it&rsquo;s hard to read.</li>
+<li>Machine code is a series of instructions. If you write the instructions
+down as text, you get assembly language.</li>
+<li>To run a C program, you need to translate to machine code (or &ldquo;binary&rdquo;).</li>
+<li>Conceptually, and historically, you first translate C -&gt; ASM, then
+ASM -&gt; binary.</li>
+<li>You can still do this if you explicitly ask for it.</li>
+</ul>
+<p>Note: For the first few homeworks you will be writing ASM programs. You
+should <em>not</em> have a compiler do this for you. Submitting compiler output
+for an assembly assignment is worth zero points.</p>
+<p>Example:</p>
+<pre tabindex="0"><code>// A C program is a collection of functions.
+// Here&#39;s a minimal program with one function
+int
+main(int argc, char* argv[])
+{
+  printf(&#34;Hello C program\n&#34;);
+  return 0;
+}
+</code></pre><pre tabindex="0"><code># Direct C =&gt; binary
+$ gcc -o hello hello.c
+$ ./hello
+
+# C =&gt; asm
+$ gcc -S -o hello.s hello.c
+# take a look at hello.s
+
+# asm =&gt; binary
+$ gcc -o hello hello.s
+$ ./hello
+</code></pre><p>Interesting stuff in hello.s:</p>
+<ul>
+<li>The string is there, but no newline.</li>
+<li>The main function exists
+<ul>
+<li>Starts at label &ldquo;main&rdquo;</li>
+<li>Ends at &ldquo;ret&rdquo;.</li>
+<li>Declared &ldquo;.globl&rdquo;</li>
+</ul>
+</li>
+<li>In the main function another function is called - not printf, but puts.</li>
+<li>The optimizer got to us.</li>
+</ul>
+<p>Let&rsquo;s tell it to be less clever:</p>
+<pre tabindex="0"><code># C =&gt; asm
+$ gcc -fno-builtin -S -o hello.s hello.c
+# take a look at hello.s
+</code></pre><ul>
+<li>Now the string has a newline.</li>
+<li>And the function called is &ldquo;printf&rdquo;.</li>
+</ul>
+<p>How about with two functions:</p>
+<pre tabindex="0"><code>// add1.c
+long
+add1(long x)
+{
+    return x + 1;
+}
+
+int
+main(int _ac, char* _av[])
+  // initial _ marks args as not used
+{
+    long x = add1(5);
+    printf(&#34;%ld\n&#34;, x);
+    return 0;
+}
+</code></pre><pre tabindex="0"><code># C =&gt; asm
+$ gcc -S -o add1.s add1.c
+# take a look at hello.s
+</code></pre><ul>
+<li>Two functions: add1, main
+<ul>
+<li>each starts at label, ends at &ldquo;ret&rdquo;</li>
+</ul>
+</li>
+<li>In main, the value 5 is moved to &ldquo;%rdi&rdquo;
+<ul>
+<li>That must be where the function&rsquo;s first argument goes.</li>
+<li>No, that&rsquo;s &ldquo;%edi&rdquo;</li>
+<li>I said &ldquo;%rdi&rdquo;, wait a second&hellip;</li>
+</ul>
+</li>
+<li>Then add1 is called</li>
+<li>In add1, the value from %rdi goes to some places.</li>
+<li>Eventually, &ldquo;addq $1, &hellip;&rdquo; happens to it.</li>
+<li>Back in main, %rax is moved to %rsi, and printf is called.</li>
+</ul>
+<p>This almost makes sense, but it&rsquo;s a bit of a mess. Let&rsquo;s figure it out.</p>
+<h2 id="amd64-isa-and-asm" class="relative group">AMD64: ISA and ASM <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#amd64-isa-and-asm" aria-label="Anchor">#</a></span></h2><p>Intel released the 8086 processor in 1978. It was based on the earlier 8008
+processor from 1972, but&hellip;</p>
+<p>The 8086 was a 16-bit microproessor. That means:</p>
+<ul>
+<li>It had a 16-bit data bus connecting it to memory and maybe other stuff.
+<ul>
+<li>That means a processor and RAM connected by 16 wires.</li>
+</ul>
+</li>
+<li>How much RAM can we address with 16 bits?</li>
+<li>In addtion to RAM, this system gives us another place to put stuff called
+registers. For a 16-bit processor, each register is 16 bits.</li>
+<li>The 8086 had 9-ish registers:
+<ul>
+<li>&ldquo;general purpose&rdquo;: ax, cx, dx, bx, si, di, bp, sp,</li>
+<li>&ldquo;special purpose&rdquo;: ip, (segment registers, status register)</li>
+</ul>
+</li>
+<li>What processors do is execute instructions. Kinds of instructions:
+<ul>
+<li>Arithmetic: Example: add $5, %cx</li>
+<li>Test: cmp $5, %cx</li>
+<li>Conditional branch: jge bigger_label</li>
+<li>Movement instruction: mov (%sp), %dx</li>
+<li>A bunch of other stuff. You&rsquo;ll want to have a reference sheet.</li>
+</ul>
+</li>
+<li>Instructions tend to operate on at least one register.</li>
+<li>Instructions can operate on memory addresses. If they do, the CPU needs
+to stop and read or write from RAM.</li>
+</ul>
+<p>The 80386 or i386 was a 32-bit microprocessor, backwards compatible with
+the 8086. This was the first &ldquo;Intel x86&rdquo; processor:</p>
+<ul>
+<li>It had a 32-bit data bus.
+<ul>
+<li>How much RAM can we address with 32-bits?</li>
+</ul>
+</li>
+<li>It had 32-bit registers.
+<ul>
+<li>If you used the old names (eg. %ax), you got the least significant
+16-bits of the register.</li>
+<li>Each register got a new name with an &ldquo;e&rdquo; at the front to refer to
+the full 32 bit &ldquo;extended&rdquo; register:
+<ul>
+<li>eax, ecx, edx, &hellip;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>The AMD Athlon 64 was a 64-bit microprocessor, backwards compatible with the Intel
+8086 and i386. This was the first &ldquo;AMD64&rdquo; processor:</p>
+<ul>
+<li>It had a 48-bit data bus, designed to be extended up to 64-bit later.
+<ul>
+<li>How much RAM can we address with 64 bits?</li>
+<li>How about 48 bits?</li>
+</ul>
+</li>
+<li>It had 64-bit registers.
+<ul>
+<li>If you used the old names (e.g. %ax, %rax), you got the least significant
+16 or 32 bits of the register.</li>
+<li>Each register got a new name with an &ldquo;r&rdquo; at the front to refer to
+the full 64 bit register.
+<ul>
+<li>rax, rcx, rdx, &hellip;</li>
+</ul>
+</li>
+<li>8 new general purpose registers were added: %r9, %r10, &hellip;, %r15</li>
+</ul>
+</li>
+</ul>
+<p>And that&rsquo;s where we are today. Let&rsquo;s write an add2 program by hand in amd64
+assembly:</p>
+<pre tabindex="0"><code># add2.s
+
+  .global main
+  
+  .text
+# long add2(long x)
+#   - the argument comes in in %rdi
+#   - we return the result by putting it in %rax
+add2:
+  enter $0, $0
+ 
+  # long y = x;
+  mov %rdi, %rax
+  
+  # y = y + 2;
+  add $2, %rax
+
+  # return y;
+  leave
+  ret
+
+main:
+  enter $0, $0
+
+  # long x = 5;
+  mov $5, %rdi
+  
+  # y = add1(x)
+  call add2
+  # result in %rax
+
+# printf(&#34;%ld\n&#34;, y)
+#  - first arg goes in %rdi
+#  - second arg goes in %rsi
+#  - for a variable arg function, we need to zero %al
+#    - %al is the bottom 8 bits of %ax/%eax/%rax
+  mov $long_fmt, %rdi
+  mov %rax, %rsi
+  mov $0, %al
+  call printf
+
+  leave
+  ret
+  
+  .data
+long_fmt: .string &#34;%ld\n&#34;
+</code></pre><p>To compile this simple hand-written assembly, we use:</p>
+<pre tabindex="0"><code>$ gcc -no-pie -o add2 add2.s
+</code></pre><h2 id="hw01" class="relative group">HW01 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#hw01" aria-label="Anchor">#</a></span></h2><p>A local Linux VM:</p>
+<ul>
+<li>The easiest way to do programming work is to have the development
+environment installed locally on your personal computer.</li>
+<li>For Linux systems programming, Linux <em>is</em> our development environment.</li>
+<li>Having it installed as your main OS is probably best.</li>
+<li>But, for consistentency, the assignment is for everyone to install
+exactly Debian 12 or Mint 22 AMD64 in a virtual machine.</li>
+<li>If you aren&rsquo;t developing on the VM and you run into weird problems later in
+the semester, use this VM to rule out configuration issues.</li>
+</ul>
+<p>Programming homework:</p>
+<ul>
+<li>Download starter code.</li>
+<li>Write some simple C and ASM code.</li>
+<li>Make sure it compiles and runs.</li>
+<li>Pack it back up and submit.</li>
+</ul>
+<p>This assignment is mostly about structure, process, and getting annoyed
+at the autograder.</p>
+<p>Keep in mind:</p>
+<ul>
+<li>A C (or asm) program is a collection of functions.</li>
+<li>These functions can be in one source file or in a bunch of different files.</li>
+<li>C functions and ASM functions are the same thing. You can mix them together
+in the same program.</li>
+<li>It&rsquo;s easiest if each file is all-C or all-ASM.</li>
+</ul>
+<p>Object file example:</p>
+<ul>
+<li>add1.c</li>
+<li>add2.c</li>
+<li>main.c</li>
+</ul>
+<pre tabindex="0"><code>$ gcc -c -o add1.o add1.c
+$ gcc -c -o add2.c add2.c
+$ ...
+$ gcc -o example add1.o add2.o main.o
+</code></pre><h2 id="another-assembly-example" class="relative group">Another Assembly Example <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#another-assembly-example" aria-label="Anchor">#</a></span></h2><ul>
+<li>Scan through the AMD64 instruction list on course site.</li>
+<li>Example: cond_br</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ gcc -no-pie -o prog prog.s
+</span></span></code></pre></div><pre tabindex="0"><code>.global main
+.text
+
+main:
+  enter $0, $0
+
+  # print prompt
+  mov $prompt, %rdi
+  call puts
+
+  mov $long_fmt, %rdi
+  mov $num, %rsi
+  mov $0, %al
+  call scanf
+
+  # copy value at address
+  # with dollar sign, copy literal address
+  mov num, %rax
+
+  # if (%rax &lt;= 10)
+  cmp $10, %rax
+  jle smaller_than_ten
+
+bigger_than_ten:
+  mov $bigger, %rdi
+  jmp main_done
+
+smaller_than_ten:
+  mov $smaller, %rdi
+
+main_done:
+  call puts
+
+  leave
+  ret
+
+.data
+num: .string &#34;12345678&#34; # 8 bytes, to fit a long
+prompt: .string &#34;enter a number&#34;
+long_fmt: .string &#34;%ld&#34;
+eol: .string &#34;\n&#34;
+bigger: .string &#34;bigger than ten&#34;
+smaller: .string &#34;smaller than ten&#34;
+</code></pre>
+      </div>
+    </section>
+    <footer class="max-w-prose pt-8 print:hidden">
+      
+  <div class="flex">
+    
+    
+    
+      
+      
+        
+        
+
+
+
+
+
+
+
+
+  
+    <picture
+      class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+      
+    >
+      
+      
+      
+      
+      <img
+        width="384"
+        height="384"
+        class="!mb-0 !mt-0 me-4 w-24 h-auto rounded-full"
+        alt="Nat Tuck"
+        loading="lazy" decoding="async"
+        
+          src="/img/author.jpg"
+        
+      />
+    </picture>
+  
+
+
+      
+    
+    <div class="place-self-center">
+      
+        <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+          Author
+        </div>
+        <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+          Nat Tuck
+        </div>
+      
+      
+      <div class="text-2xl sm:text-lg">
+  <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://github.com/NatTuck"
+          target="_blank"
+          aria-label="Github"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+</span></a
+        >
+      
+    
+      
+        <a
+          class="px-1 transition-transform hover:scale-125 hover:text-primary-700 dark:hover:text-primary-400"
+          style="will-change:transform;"
+          href="https://youtube.com/NatTuck"
+          target="_blank"
+          aria-label="Youtube"
+          rel="me noopener noreferrer"
+          ><span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+</span></a
+        >
+      
+    
+  </div>
+
+</div>
+    </div>
+  </div>
+
+
+      
+
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="group flex" href="/classes/2025-01/cs4310/syllabus/">
+              <span
+                class="me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&larr;</span
+                ><span class="ltr:hidden rtl:inline">&rarr;</span></span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >CS 4310 Spring 2025: Syllabus</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-01-17 00:00:00 &#43;0000 UTC">2025 Jan 17</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+            <a class="group flex text-right" href="/classes/2025-01/cs4310/notes/02-asm-and-c/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Lecture Notes: 02 ASM and C</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-01-22 00:00:00 &#43;0000 UTC">2025 Jan 22</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[-2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+                ><span class="ltr:inline rtl:hidden">&rarr;</span
+                ><span class="ltr:hidden rtl:inline">&larr;</span></span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+    </footer>
+  </article>
+
+      </main>
+      
+        <div
+          class="pointer-events-none absolute bottom-0 end-0 top-[100vh] w-12"
+          id="to-top"
+          hidden="true"
+        >
+          <a
+            href="#the-top"
+            class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      <footer class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    <div>
+      
+      
+        <p class="text-sm text-neutral-500 dark:text-neutral-400">
+            &copy;
+            2025
+            Nat Tuck
+        </p>
+      
+      
+      
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          
+          
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>
+        </p>
+      
+    </div>
+    <div class="flex flex-row items-center">
+      
+      
+      
+      
+    </div>
+  </div>
+  
+  
+</footer>
+
+    </div>
+  </body>
+</html>
